@@ -38,8 +38,12 @@
 								<p>A fullstack software engineer,</p>
 								<p>A webxr enthusiast, &</p>
 								<p>A cat mom.</p><br />
+								<span id="more">I am a Jersey City based fullstack software engineer with a background in health & fitness.<br />
+												Through the years I've found myself primarily attracted to media and conversations surrounding<br />
+												the tech industry and the what-ifs regarding the roles it will play in the future. I am immensely <br />
+												excited about those what-ifs and I look forward to aiding in making some of those what-ifs into a reality. </span>
 								<ul class="actions">
-								<li><a href="#" class="button">Read More</a></li>
+								<li><button class="button" onclick="readMore()" id="myBtn">Read More</button></li>
 								</ul>
 							</header>
 						</section>
@@ -336,6 +340,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function readMore() {
+  					var moreText = document.getElementById("more");
+  					var btnText = document.getElementById("myBtn");
+
+  					if (btnText.innerHTML === "Read More") {
+    				moreText.style.display = "inline";
+					btnText.innerHTML = "Read Less";
+  					} else {
+    				btnText.innerHTML = "Read More";
+    				moreText.style.display = "none";
+  					}
+				}
+			</script>
 
 	</body>
 </html>

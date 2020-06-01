@@ -2212,6 +2212,11 @@ input, select, textarea {
 				font-size: 1.5em;
 			}
 
+			#more {
+				color: rgb(190, 189, 189);
+				display: none;
+			}
+
 /* Intro */
 
 	#intro {
