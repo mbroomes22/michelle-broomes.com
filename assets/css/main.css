@@ -2177,7 +2177,10 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("https://dm83ll4wkzne.cloudfront.net/wilderness/wp-content/uploads/2020/03/03141854/New-Project-43-1.jpg");
+		/* https://www.ietravel.com/sites/iet/files/styles/d2_hero_fp_scale_and_crop_2400x800/public/kaieteur_falls.jpg?t=1Jic8l&itok=EyGmrgHv
+		https://www.beautifulworld.com/wp-content/uploads/2016/10/kaieteur-falls-wide.jpg 
+		https://dm83ll4wkzne.cloudfront.net/wilderness/wp-content/uploads/2020/03/03141854/New-Project-43-1.jpg*/
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
