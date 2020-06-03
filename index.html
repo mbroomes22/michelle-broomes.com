@@ -10,8 +10,37 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js
+		"></script>
 	</head>
 	<body class="homepage is-preload">
+	  <div class="contain">
+
+		<div class="overlay">
+			<p class="screen">
+				<svg id="logo" width="1440" height="789" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+					<path d="M461.44 466.28V577H446.88V494.44L410.08 577H399.84L362.88 494.28V577H348.32V466.28H364L404.96 557.8L445.92 466.28H461.44Z" stroke="white" stroke-width="5"/>
+					<path d="M500.693 465.48V577H486.133V465.48H500.693Z" stroke="white" stroke-width="5"/>
+					<path d="M520.068 521.16C520.068 510.28 522.521 500.52 527.428 491.88C532.334 483.133 539.001 476.307 547.428 471.4C555.961 466.493 565.401 464.04 575.747 464.04C587.907 464.04 598.521 466.973 607.587 472.84C616.654 478.707 623.268 487.027 627.428 497.8H609.987C606.894 491.08 602.414 485.907 596.548 482.28C590.788 478.653 583.854 476.84 575.747 476.84C567.961 476.84 560.974 478.653 554.788 482.28C548.601 485.907 543.748 491.08 540.228 497.8C536.708 504.413 534.947 512.2 534.947 521.16C534.947 530.013 536.708 537.8 540.228 544.52C543.748 551.133 548.601 556.253 554.788 559.88C560.974 563.507 567.961 565.32 575.747 565.32C583.854 565.32 590.788 563.56 596.548 560.04C602.414 556.413 606.894 551.24 609.987 544.52H627.428C623.268 555.187 616.654 563.453 607.587 569.32C598.521 575.08 587.907 577.96 575.747 577.96C565.401 577.96 555.961 575.56 547.428 570.76C539.001 565.853 532.334 559.08 527.428 550.44C522.521 541.8 520.068 532.04 520.068 521.16Z" stroke="white" stroke-width="5"/>
+					<path d="M735.021 465.48V577H720.461V526.44H663.661V577H649.101V465.48H663.661V514.44H720.461V465.48H735.021Z" stroke="white" stroke-width="5"/>
+					<path d="M774.443 477.32V514.6H815.082V526.6H774.443V565H819.883V577H759.883V465.32H819.883V477.32H774.443Z" stroke="white" stroke-width="5"/>
+					<path d="M856.474 565.16H895.514V577H841.914V465.48H856.474V565.16Z" stroke="white" stroke-width="5"/>
+					<path d="M925.536 565.16H964.576V577H910.976V465.48H925.536V565.16Z" stroke="white" stroke-width="5"/>
+					<path d="M994.599 477.32V514.6H1035.24V526.6H994.599V565H1040.04V577H980.039V465.32H1040.04V477.32H994.599Z" stroke="white" stroke-width="5"/>
+					
+				</svg>
+			</p>
+			<div class="intro">
+				<button class="myBtn" onclick="fadeOut()">EXPLORE</button>
+			</div>
+		</div>
+
+		<div class="overlay-2">
+
+		</div>
+
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -338,7 +367,7 @@
 						</div>
 					</div>
 				</section>
-
+			</div>
 		</div>
 
 		<!-- Scripts -->
@@ -349,6 +378,44 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
+
+				function fadeOut() {
+					TweenMax.to(".myBtn", 1, {
+						y: -100,
+						opacity: 0
+					})
+
+					TweenMax.to(".screen", 2, {
+						y:-400,
+						opacity: 0,
+						ease: Power2.easeInOut, 
+						delay: 2
+					})
+
+					TweenMax.from(".overlay", 2, {
+						ease: Power2.easeInOut
+					})
+
+					TweenMax.to(".overlay", 2, {
+						delay: 2.6,
+						top: "-110%",
+						ease: Expo.easeInOut
+					})
+
+					TweenMax.from("#page-wrapper", 2, {
+						delay: 3.2,
+						opacity: 0,
+						ease: Power2.easeInOut
+					})
+
+					TweenMax.to("#page-wrapper", 2, {
+						opacity: 1,
+						y: -300,
+						delay: 3.2,
+						ease: Powerr2.easeInOut
+					})
+				}
+
 				function readMore() {
   					var moreText = document.getElementById("more");
   					var btnText = document.getElementById("myBtn");
