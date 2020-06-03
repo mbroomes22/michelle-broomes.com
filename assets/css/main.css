@@ -203,6 +203,10 @@ input, select, textarea {
 	background: rgb(32, 35, 48);
 }
 
+body .overlay {
+	position: fixed;
+}
+
 #logo {
 	animation: fill 0.5s ease forwards 4s;
 }
