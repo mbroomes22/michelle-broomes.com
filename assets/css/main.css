@@ -209,11 +209,20 @@ body .overlay {
 }
 
 #logo {
-	position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	
 	animation: fill 0.5s ease forwards 4s;
+}
+
+@media screen and (max-width: 736px) {
+
+	#logo {
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: fill 0.5s ease forwards 4s;
+	}
+
 }
 #logo path:nth-child(1) {
     stroke-dasharray: 838.8px;
