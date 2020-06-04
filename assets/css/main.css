@@ -209,11 +209,10 @@ body .overlay {
 }
 
 #logo {
-	
 	animation: fill 0.5s ease forwards 4s;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 800px) {
 
 	#logo {
 		position: absolute;
