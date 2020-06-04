@@ -1733,6 +1733,30 @@ body .overlay {
 
 /* Button */
 
+	/* .round-btn {
+		background: rgb(97, 96, 96);
+		border-radius: 50%;
+		height: 80px;
+		width: 80px;
+		font-size: 14px;
+		font-weight: 200px;
+	}
+
+	.round-btn:hover {
+		background: rgb(49, 71, 79);
+	} */
+
+	.stretch-btn {
+		background: rgb(97, 96, 96);
+		width:100%;
+		font-size: 14px;
+		font-weight: 200px;
+	}
+
+	.stretch-btn:hover {
+		background: rgb(49, 71, 79);
+	}
+
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -2400,6 +2424,18 @@ body .overlay {
 
 		#intro footer {
 			margin: 0;
+		}
+
+		#details {
+			display: none;
+		}
+
+		#details-2 {
+			display: none;
+		}
+
+		#details-3 {
+			display: none;
 		}
 
 /* Main */

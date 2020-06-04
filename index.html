@@ -181,9 +181,11 @@
 													<header>
 														<h3>Chef Remy</h3>
 													</header>
-													<p>Chef Remy is a custom recipe generating fullstack website and Progressive Web App (PWA) with a companion Alexa Skill. Visitors can navigate through web pages using Alexa or with the browser based Speech Recognition button on the home screen. Users can upload a photo of their store receipts to receive a list of the items they bought, which can immediately be added to their fridge and used to find their personal recipe suggestions.</p>
+													<button class="stretch-btn" onclick="learnMore()" id="chef-remy" >Read More</button>
+													<span id="details"><p>Chef Remy is a custom recipe generating fullstack website and Progressive Web App (PWA) with a companion Alexa Skill. Visitors can navigate through web pages using Alexa or with the browser based Speech Recognition button on the home screen. Users can upload a photo of their store receipts to receive a list of the items they bought, which can immediately be added to their fridge and used to find their personal recipe suggestions.</p>
 													<p>Technologies:</p>
 													<p>Javascript, React, Redux, Node, Express, Speech Recognition API, Edamam API, Spoonacular API, Sequelize, Tesseract, PSQL, AWS Lambda</p>
+													</span>
 													<footer>
 														<ul class="actions">
 															<li><a href="https://chef-remy.herokuapp.com/" class="button" target="_blank">Visit Site</a></li>
@@ -196,11 +198,13 @@
 												<section class="box">
 													<a href="#" class="image featured"><img src="./budget-view-site.png" alt="" /></a>
 													<header>
-														<h3>Three Finance (Budget Viewer)</h3>
+														<h3>Budget Viewer</h3>
 													</header>
-													<p>A budgeting website where users can see and plan their finances in a 3D web view (or in virtual reality). Viewers are able to hook up their bank accounts to the website and see 3D graphs of their account details.</p>
+													<button class="stretch-btn" onclick="learnMore2()" id="budget-view" >Read More</button>
+													<span id="details-2"><p>A budgeting website where users can see and plan their finances in a 3D web view (or in virtual reality). Viewers are able to hook up their bank accounts to the website and see 3D graphs of their account details.</p>
 													<p>Technologies:</p>
 													<p>Javascript, Three.js, Anime.js, GSAP, React, Redux, Express, Node, PSQL, Sequelize, D3.js</p>
+													</span>
 													<footer>
 														<ul class="actions">
 															<li><a href="#" class="button" target="_blank">Visit Site</a></li>
@@ -215,9 +219,11 @@
 													<header>
 														<h3>Coocucachew</h3>
 													</header>
-													<p>An e-commerce website for viewing and purchasing baked sweets. Logged in users are able to add items to their shopping cart, checkout and pay using stripe.</p>
+													<button class="stretch-btn" onclick="learnMore3()" id="coocucachew" >Read More</button>
+													<span id="details-3"><p>An e-commerce website for viewing and purchasing baked sweets. Logged in users are able to add items to their shopping cart, checkout and pay using stripe.</p>
 													<p>Technologies:</p>
 													<p>Javascript, React, Redux, Express, Node, Sequelize, PSQL, Stripe API</p>
+													</span>
 													<footer>
 														<ul class="actions">
 															<li><a href="https://coocucachew.herokuapp.com/" class="button" target="_blank">Visit Site</a></li>
@@ -419,6 +425,45 @@
 				function readMore() {
   					var moreText = document.getElementById("more");
   					var btnText = document.getElementById("myBtn");
+
+  					if (btnText.innerHTML === "Read More") {
+    				moreText.style.display = "inline";
+					btnText.innerHTML = "Read Less";
+  					} else {
+    				btnText.innerHTML = "Read More";
+    				moreText.style.display = "none";
+  					}
+				}
+
+				function learnMore() {
+  					var moreText = document.getElementById("details");
+  					var btnText = document.getElementById("chef-remy");
+
+  					if (btnText.innerHTML === "Read More") {
+    				moreText.style.display = "inline";
+					btnText.innerHTML = "Read Less";
+  					} else {
+    				btnText.innerHTML = "Read More";
+    				moreText.style.display = "none";
+  					}
+				}
+
+				function learnMore2() {
+  					var moreText = document.getElementById("details-2");
+  					var btnText = document.getElementById("budget-view");
+
+  					if (btnText.innerHTML === "Read More") {
+    				moreText.style.display = "inline";
+					btnText.innerHTML = "Read Less";
+  					} else {
+    				btnText.innerHTML = "Read More";
+    				moreText.style.display = "none";
+  					}
+				}
+
+				function learnMore3() {
+  					var moreText = document.getElementById("details-3");
+  					var btnText = document.getElementById("coocucachew");
 
   					if (btnText.innerHTML === "Read More") {
     				moreText.style.display = "inline";
