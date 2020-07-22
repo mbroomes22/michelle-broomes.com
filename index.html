@@ -181,10 +181,35 @@
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="./chef-remy-site.png" alt="" /></a>
+													<a id="proj1" class="image featured"><img src="./chef-remy-site.png" alt="" /></a>
 													<header>
 														<h3>Chef Remy</h3>
 													</header>
+													<div id="myModal" class="modal">
+
+														<!-- Modal content -->
+														<div class="modal-content">
+														  <span class="close">&times;</span>
+														  <h3 class="modal-title">Chef Remy</h3>
+														  <div class="modal-info">
+														  <div class="modal-vid">
+														  <video width="480" height="360" controls>
+															<source src="remy-vid.mov" type="video/mov">
+															<source src="chef-remy-vid.mp4" type="video/mp4">
+														  Your browser does not support the video tag.
+														  </video>
+														</div>
+														  <div class="modal-descrip">
+														  <p>Chef Remy is a custom recipe generating fullstack website and Progressive Web App (PWA) with a companion Alexa Skill. Visitors can navigate through web pages using Alexa or with the browser based Speech Recognition button on the home screen. Users can upload a photo of their store receipts to receive a list of the items they bought, which can immediately be added to their fridge and used to find their personal recipe suggestions.
+															<br /><br />
+															Technologies:
+															
+															Javascript, React, Redux, Node, Express, Web Speech API, Edamam API, Spoonacular API, Sequelize, Tesseract, PSQL, AWS Lambda</p>
+														</div>
+													</div>
+														</div>
+													  
+													  </div>
 													<button class="stretch-btn" onclick="learnMore()" id="chef-remy" >Read More</button>
 													<span id="details"><p>Chef Remy is a custom recipe generating fullstack website and Progressive Web App (PWA) with a companion Alexa Skill. Visitors can navigate through web pages using Alexa or with the browser based Speech Recognition button on the home screen. Users can upload a photo of their store receipts to receive a list of the items they bought, which can immediately be added to their fridge and used to find their personal recipe suggestions.</p>
 													<p>Technologies:</p>
@@ -200,7 +225,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="./budget-view-site.png" alt="" height="212.45px" /></a>
+													<a href="#" id="proj2" class="image featured"><img src="./budget-view-site.png" alt="" height="212.45px" /></a>
 													<header>
 														<h3>Three Finance</h3>
 													</header>
@@ -219,7 +244,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="./coocucachew.png" alt="" /></a>
+													<a href="#" id="proj3" class="image featured"><img src="./coocucachew.png" alt="" /></a>
 													<header>
 														<h3>Coocucachew</h3>
 													</header>
@@ -236,34 +261,36 @@
 													</footer>
 												</section>
 											</div>
-											<!-- <div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+													<a href="#" id="proj4" class="image featured"><img src="./arrest-alert.png" alt="" /></a>
 													<header>
-														<h3>Blandit sed adipiscing</h3>
+														<h3>Arrest Alert</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<!-- <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p> -->
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
+															<li><a href="https://www.youtube.com/watch?v=u-VfgRZ8Ato&feature=youtu.be" class="button" target="_blank">View Demo</a></li>
+															<li><a href="https://github.com/arrest-alert/arrest-alert" class="button alt" target="_blank">See Code</a></li>
 														</ul>
 													</footer>
 												</section>
-											</div> -->
-											<!-- <div class="col-4 col-6-medium col-12-small">
+											</div>
+											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<a href="#" id="proj5" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
 													<header>
-														<h3>Etiam nisl consequat</h3>
+														<h3>Next Nest</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<!-- <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p> -->
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
+															<li><a href="#" class="button" target="_blank">View Demo</a></li>
+															<li><a href="https://github.com/mbroomes22/welcome-home" class="button alt" target="_blank">See Code</a></li>
 														</ul>
 													</footer>
 												</section>
-											</div> -->
+											</div>
 											<!-- <div class="col-4 col-6-medium col-12-small">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
@@ -477,6 +504,32 @@
     				moreText.style.display = "none";
   					}
 				}
+
+				// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("proj1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 			</script>
 
 	</body>
