@@ -1923,6 +1923,7 @@ body .overlay {
 		.image img {
 			display: block;
 			width: 100%;
+			min-height: 212px;
 		}
 
 		.image.centered {
